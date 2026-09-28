@@ -47,6 +47,10 @@ export default function Home() {
       <nav className={menuOpen ? 'nav open' : 'nav'}><a href="#services" onClick={() => setMenuOpen(false)}>Our services</a><a href="#journey" onClick={() => setMenuOpen(false)}>Learning path</a><a href="#impact" onClick={() => setMenuOpen(false)}>Our impact</a><a href="#cities" onClick={() => setMenuOpen(false)}>Where we are</a><a className="nav-cta" href="#join" onClick={() => setMenuOpen(false)}>Teach with us <span>↗</span></a></nav>
     </header>
     <main id="home">
+      <div className="road-backdrop" aria-hidden="true">
+        <img className="road-vehicle road-car" src="/images/road-car.png" alt="" />
+        <img className="road-vehicle road-bike" src="/images/road-bike.png" alt="" />
+      </div>
       <section className="hero">
         <div className="hero-copy"><div className="eyebrow"><span className="pulse"/> DRIVING CLASSES, MADE HUMAN</div>
           <h1>Your road.<br/><span>Your rules.</span></h1>
